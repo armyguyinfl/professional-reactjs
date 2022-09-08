@@ -1,12 +1,15 @@
 import React, { Component }  from 'react';
 
+import CartItem from './CartItem';
+import styles from './Cart.module.css';
+
 function Cart() {
   return (
-    <div>
-      <h1>Cart</h1>
-      <p>Item</p>
-      <p>Item</p>
-      <p>Item</p>
+    <div className='styles.cart'>
+      <h2>Cart</h2>
+      <CartItem />
+      <CartItem />
+      <CartItem />
       <p>Total: $x USD</p>
     </div>
   );

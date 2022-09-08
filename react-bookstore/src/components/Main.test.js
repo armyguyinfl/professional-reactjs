@@ -3,6 +3,6 @@ import Main from './Main';
 
 test('renders testing text', () => {
   render(<Main />);
-  const testText = screen.getByText(/This is the main/i);
+  const testText = screen.getByText(/Cart/i);
   expect(testText).toBeInTheDocument();
 });
