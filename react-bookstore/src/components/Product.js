@@ -1,10 +1,13 @@
 import React, { Component }  from 'react';
+import { companyColor } from '../styles/companyStyles';
 
 function Product() {
   return (
     <div>
       <img src='/images/default.jpg' alt='Book cover' className='App-book-cover-photo' />
-      <h1>Title</h1>
+      <div style={companyColor}> {/* Inline style example using a global App.css style applied to the title */}
+        <h1>Title</h1>
+      </div>
       <div>by: Author</div>
       <div>published: year,country</div>
       <div>language: lang</div>
