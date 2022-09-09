@@ -1,3 +1,8 @@
+.thumbnail {
+  width: 200px;
+  height: 293px;
+  object-fit: cover;
+}
 /*
 .product {
     padding: 0;

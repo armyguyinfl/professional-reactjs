@@ -3,13 +3,13 @@ import React, { Component }  from 'react';
 import Product from './Product';
 import styles from './ProductList.module.css';
 
-function ProductList() {
+function ProductList(props) {
   return (
     <ul className={styles.productList}>
-      <li className={styles.productListItem}><Product /></li>
-      <li className={styles.productListItem}><Product /></li>
-      <li className={styles.productListItem}><Product /></li>
-      <li className={styles.productListItem}><Product /></li>
+      {/* Loops through dataset and generate list items with product data which is available via props */}
+      {props.products.map(product => ( 
+         <li key={product.id} className={styles.productListItem}><Product {...product} /></li>
+      ))}
     </ul>
   );
 }

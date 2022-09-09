@@ -3,7 +3,7 @@ import React, { Component }  from 'react';
 import CartItem from './CartItem';
 import styles from './Cart.module.css';
 
-function Cart() {
+function Cart(props) {
   return (
     <div className='styles.cart'>
       <h2>Cart</h2>

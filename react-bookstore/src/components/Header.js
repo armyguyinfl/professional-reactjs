@@ -1,6 +1,6 @@
 import React, { Component }  from 'react';
 
-function Header() {
+function Header(props) {
   return (
     <header>
         <h1>Welcome to React Bookstore</h1>
